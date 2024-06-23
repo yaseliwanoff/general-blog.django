@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+</head>
+<body>
+    <div id="main">
+        <div class="header">
+            <div class="container">
+                <div class="header__logo" style="cursor: default;">
+                    <h3>slvnv</h3>
+                </div>
+                <div class="header__menu">
+                    <a href="home.html">Home</a>
+                    <a href="posts.html">Posts</a>
+                    <a href="music.html">Music</a>
+                    <a href="about.html">About me</a>
+                </div>
+                <div class="header__search">
+                    <input type="text" placeholder="Search" class="search-input">
+                </div>
+                <div class="header__buttons">
+                    <div class="header__buttons__signin">
+                        <a href="#"><button>Sign in</button></a>
+                    </div>
+                    <div class="header__buttons__signup">
+                        <a href="#"><button>Sign up</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="container">
+                <div class="register">
+                    <div class="register__title">Register for <br>this website</div>
+                    <div class="register__subtitle">If this is your first time on the site, register your account to continue.</div>
+                    <div class="register__fields">
+                        <div class="register__fields__email">
+                            <input type="email" name="email" placeholder="Email">
+                        </div>
+                        <div class="register__fields__username">
+                            <input type="text" name="username" placeholder="Username">
+                        </div>
+
+                        <div class="firstname_and_lastname">
+                            <div class="register__fields__firstname">
+                                <input type="text" name="fname" placeholder="First name">
+                            </div>
+                            <div class="register__fields__lastname">
+                                <input type="text" name="lname" placeholder="Last name">
+                            </div>
+                        </div>
+                        
+                        <div class="register__fields__dateofbirch">
+                            <input type="date" name="date" placeholder="Date of bitch">
+                        </div>
+                        <div class="register__fields__password">
+                            <input type="password" name="password1" placeholder="Passowrd">
+                        </div>
+                        <div class="register__fields__repairpassword">
+                            <input type="password" name="password2" placeholder="Repair passowrd">
+                        </div>
+                    </div>
+                    <div class="register__buttons">
+                        <button class="register__btn" type="submit">Register account</button>
+                        <p class="linktext">You have account? <a href="#" class="linktext">Login</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
