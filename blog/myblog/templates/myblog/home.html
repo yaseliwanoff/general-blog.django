@@ -1,0 +1,140 @@
+{% extends 'myblog/base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="main">
+            <div class="container">
+                {% if user.is_authenticated %}
+                <h1>HELLO USER! {{ user.username }}</h1>
+                    {% else %}
+                    <h1>NO authenticated</h1>
+                {% endif %}
+                <div class="main__title__info">
+                    <h1>Hello user, I’m Yaroslav.</h1>
+                    <p>I am a developer and I am trying to improve my skills by developing various websites, systems and web applications. This blog is my project to practice my skills. On this site you can read existing posts or add your own</p>
+                </div>
+                <div class="more__posts">
+                    <div class="more__post__title">
+                        <h2>Сurrent posts for today</h2>
+                    </div>
+                    <div class="wrapper">
+                        <div class="posts">
+                            <a href="#">
+                                <div class="post">
+                                    <div class="post__title">
+                                        The post title
+                                    </div>
+                                    <div class="post__subtitle">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut egestas risus non turpis sollicitudin placerat. Phasellus tincidunt risus quis mi convallis, quis luctus ex fringilla. Sed ac ex nisi
+                                    </div>
+                                    <div class="more_info">
+                                        <div class="post__date">
+                                            01.01.1001
+                                        </div>
+                                        <div class="post__author">
+                                            Yaroslav
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="#">
+                                <div class="post">
+                                    <div class="post__title">
+                                        The post title
+                                    </div>
+                                    <div class="post__subtitle">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut egestas risus non turpis sollicitudin placerat. Phasellus tincidunt risus quis mi convallis, quis luctus ex fringilla. Sed ac ex nisi
+                                    </div>
+                                    <div class="more_info">
+                                        <div class="post__date">
+                                            01.01.1001
+                                        </div>
+                                        <div class="post__author">
+                                            Yaroslav
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="#">
+                                <div class="post">
+                                    <div class="post__title">
+                                        The post title
+                                    </div>
+                                    <div class="post__subtitle">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut egestas risus non turpis sollicitudin placerat. Phasellus tincidunt risus quis mi convallis, quis luctus ex fringilla. Sed ac ex nisi
+                                    </div>
+                                    <div class="more_info">
+                                        <div class="post__date">
+                                            01.01.1001
+                                        </div>
+                                        <div class="post__author">
+                                            Yaroslav
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="#">
+                                <div class="post">
+                                    <div class="post__title">
+                                        The post title
+                                    </div>
+                                    <div class="post__subtitle">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut egestas risus non turpis sollicitudin placerat. Phasellus tincidunt risus quis mi convallis, quis luctus ex fringilla. Sed ac ex nisi
+                                    </div>
+                                    <div class="more_info">
+                                        <div class="post__date">
+                                            01.01.1001
+                                        </div>
+                                        <div class="post__author">
+                                            Yaroslav
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="#">
+                                <div class="post">
+                                    <div class="post__title">
+                                        The post title
+                                    </div>
+                                    <div class="post__subtitle">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut egestas risus non turpis sollicitudin placerat. Phasellus tincidunt risus quis mi convallis, quis luctus ex fringilla. Sed ac ex nisi
+                                    </div>
+                                    <div class="more_info">
+                                        <div class="post__date">
+                                            01.01.1001
+                                        </div>
+                                        <div class="post__author">
+                                            Yaroslav
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="#">
+                                <div class="post">
+                                    <div class="post__title">
+                                        The post title
+                                    </div>
+                                    <div class="post__subtitle">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut egestas risus non turpis sollicitudin placerat. Phasellus tincidunt risus quis mi convallis, quis luctus ex fringilla. Sed ac ex nisi
+                                    </div>
+                                    <div class="more_info">
+                                        <div class="post__date">
+                                            01.01.1001
+                                        </div>
+                                        <div class="post__author">
+                                            Yaroslav
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+{% endblock content %}
