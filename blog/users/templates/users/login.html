@@ -1,0 +1,32 @@
+{% extends 'users/base.html' %}
+{% load static %}
+<title>Login</title>
+{% block content %}
+    {% include 'myblog/complex/_navbar.html' %}
+    <div class="container">
+        <form action="{% url 'users:login_user' %}" method="post">
+            {% csrf_token %}
+            {% if form.non_field_errors %}
+                <p>{{ form.non_field_errors }}</p>
+            {% endif %}
+
+            <!-- Rest of your form -->
+            <div class="login">
+                    <div class="login__title">Login for <br>this website</div>
+                    <div class="login__subtitle">If you already have an account, simply log in by entering your details.</div>
+                    <div class="login__fields">
+                        <div class="login__fields__username">
+                            {{ form.username }}
+                        </div>
+                        <div class="login__fields__password">
+                            {{ form.password }}
+                        </div>
+                    </div>
+                    <div class="login__buttons">
+                        <button class="login__btn" type="submit">Login in account</button>
+                        <p class="linktext">You don't have account? <a href="{% url 'users:register_user' %}" class="linktext">Register</a></p>
+                    </div>
+            </div>
+        </form>
+    </div>
+{% endblock content %}

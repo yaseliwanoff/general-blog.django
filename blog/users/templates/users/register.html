@@ -1,0 +1,54 @@
+{% extends 'users/base.html' %}
+{% load static %}
+<title>{{ title }}</title>
+{% block content %}
+    {% include 'myblog/complex/_navbar.html' %}
+    <div class="container">
+        <form action="" method="post">
+            {% csrf_token %}
+            <div class="register">
+                    <div class="register__title">Register for <br>this website</div>
+                    <div class="register__subtitle">If this is your first time on the site, register your account to continue.</div>
+{#                    {{ form.as_p }}#}
+                    {% if form.errors %}
+                        <ul>
+                            {% for field in form %}
+                                {% if field.errors %}
+                                    <li>{{ field.label }}: {{ field.errors|join:", " }}</li>
+                                {% endif %}
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
+                    <div class="register__fields">
+                            <div class="register__fields__email">
+                                {{ form.email }}
+                            </div>
+                            <div class="register__fields__username">
+                                {{ form.username }}
+                            </div>
+
+                            <div class="firstname_and_lastname">
+                                <div class="register__fields__firstname">
+                                    {{ form.first_name }}
+                                </div>
+                                <div class="register__fields__lastname">
+                                    {{ form.last_name }}
+                                </div>
+                            </div>
+
+                            <div class="register__fields__password">
+                                {{ form.password1 }}
+                            </div>
+                            <div class="register__fields__repairpassword">
+                                {{ form.password2 }}
+                            </div>
+                        </div>
+                    <div class="register__buttons">
+                        <button class="register__btn" type="submit">Register account</button>
+                        <p class="linktext">You have account? <a href="#" class="linktext">Login</a></p>
+                    </div>
+                </div>
+        </form>
+    </div>
+</form>
+{% endblock content %}
